@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>todolist</title>
+	</head>
+	<body>
+		<main>
+			<section class="new__task">
+				<h1>My Todo List</h1>
+				<form id="task-form" class="form">
+					<input name="title" type="text" class="form__input" placeholder="Enter a new task..." />
+					<button type="submit" class="form__submit"><i class="fa-solid fa-circle-plus"></i></button>
+				</form>
+			</section>
+			<section class="tasks">
+				<div class="tasks__header">
+					<h2>Tasks</h2>
+					<div class="filter">
+						<select class="filter__tasks" id="tasks-filter">
+							<option value="all">All</option>
+							<option value="checked">Checked</option>
+							<option value="unchecked">Unchecked</option>
+						</select>
+					</div>
+				</div>
+				<div class="tasks__list" id="tasks-list"></div>
+			</section>
+		</main>
+		<script src="app.js"></script>
+	</body>
+</html>
